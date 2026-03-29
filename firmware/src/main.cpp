@@ -1,6 +1,6 @@
 /* CEG4195 Project */
 /* Author: Alex Gordon */
-/* Last revision: 3-19-26 */
+/* Last revision: 3-29-26 */
 
 /* ===== 1.0 DEPENDENCIES & MACROS ===== */
 #include <stdio.h>
@@ -143,7 +143,7 @@ extern "C" void app_main() {
     init_hardware();
     printf("READY\n");
 
-    uint8_t data[128];
+    uint8_t data[BUF_SIZE + 1];
     while (1) {
         int len = uart_read_bytes(UART_PORT_NUM, data, BUF_SIZE, pdMS_TO_TICKS(100));
         if (len > 0) {
