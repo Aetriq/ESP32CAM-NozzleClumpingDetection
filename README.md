@@ -13,7 +13,7 @@
 </p>
 
 ## Update Log
-**6-8-26:** I'm currently beginning physical implementation of this on my ![custom 3D printer](https://aetriq.xyz/intrastice). Based on requirements, I have the current model's behaviour as follows:
+**6-8-26:** I'm currently beginning physical implementation of this on my [custom 3D printer](https://aetriq.xyz/intrastice). Based on requirements, I have the current model's behaviour as follows:
 
 <p align="center">
   <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/3states.png?raw=true" alt="Repo img" width="40%"/>
