@@ -16,26 +16,26 @@
 **6-8-26:** I'm currently beginning physical implementation of this on my ![custom 3D printer](https://aetriq.xyz/intrastice). Based on requirements, I have the current model's behaviour as follows:
 
 <p align="center">
-  <img src="https://aetriq.xyz/img/intrastice/3states.png?raw=true" alt="Repo img" width="40%"/>
+  <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/3states.png?raw=true" alt="Repo img" width="40%"/>
 </p>
 
 Three states within the model are blob, clean and extruded. Extruded is the intermediate state preventing false positives.
 
 <p align="center">
-  <img src="https://aetriq.xyz/img/intrastice/State.png?raw=true" alt="Repo img" width="60%"/>
+  <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/State.png?raw=true" alt="Repo img" width="60%"/>
 </p>
 
 This is mostly final, only making improvements for things like deadlocks, etc.
 
 The high level H/W setup diagram is below. This is fairly simple and modular:
 <p align="center">
-  <img src="https://aetriq.xyz/img/intrastice/circuit.png?raw=true" alt="Repo img" width="60%"/>
+  <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/circuit.png?raw=true" alt="Repo img" width="60%"/>
 </p>
 
 The actual trained model post transfer learning is looking very good. This is only on a 1250 image 82/18 dataset, but even quantized to int8 (which is basically required) yields a near 97% accuracy...
 
 <p align="center">
-  <img src="https://aetriq.xyz/img/intrastice/data.jpg?raw=true" alt="Repo img" width="60%"/>
+  <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/data.jpg?raw=true" alt="Repo img" width="60%"/>
 </p>
 
 ## Project Description
@@ -44,8 +44,8 @@ A very lightweight and quick nozzle based clumping detection for Klipper-based 3
 ---
 
 <p align="center">
-  <img src="https://github.com/Aetriq/CEG4195-Project/blob/main/img/repo-img/topviewrender.png?raw=true" alt="Repo img" width="90%"/>
-  <img src="https://github.com/Aetriq/CEG4195-Project/blob/main/img/repo-img/coolcloseuprender.png?raw=true" alt="Repo img" width="90%"/>
+  <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/topviewrender.png?raw=true" alt="Repo img" width="90%"/>
+  <img src="https://github.com/Aetriq/ESP32CAM-NozzleClumpingDetection/blob/main/img/repo-img/coolcloseuprender.png?raw=true" alt="Repo img" width="90%"/>
 </p>
 
 ---
